@@ -1,0 +1,6 @@
+[package]
+name = "employees_db"
+version = "0.1.0"
+authors = ["Nathan Friedly <nathan@nfriedly.com>"]
+
+[dependencies]
