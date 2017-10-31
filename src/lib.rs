@@ -1,7 +1,13 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+extern crate regex;
+
+pub mod company;
+pub mod parser;
+
+#[derive(Debug,PartialEq)]
+pub enum Action {
+    AddEmployeeToDepartment(String, String),
+    ListEmployeesInDepartment(String),
+    ListAllEmployees,
+    Unknown
 }
+
